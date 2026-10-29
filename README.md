@@ -47,6 +47,37 @@ Two flowcharts are used: one for the preprocessing program and one for the visua
 ## 5. Visualizations
 - Total: **10**
 
+<img width="982" height="606" alt="image" src="https://github.com/user-attachments/assets/1a4eb7ba-3aaf-4016-be4f-4d26876e6d68" />
+Figure 1. The median PSA 10 price is $1,150, but the mean is $4,493 (skew 6.41). 60 cards sell above $10,000, and the 10 most expensive cards make up 25% of all PSA 10 value, so a few cards dominate the market.
+
+<img width="980" height="606" alt="image" src="https://github.com/user-attachments/assets/c654da66-e3d6-42d0-b8be-a3d5c5c92bd2" />
+Figure 2. After the log1p transform the skew falls from 6.41 to 0.55. The distribution is now close to symmetric, which is why the log columns are used for scaling and modelling.
+
+<img width="983" height="607" alt="image" src="https://github.com/user-attachments/assets/4c7662b1-af74-4c30-88cf-3024ec6b8007" />
+Figure 3. Most cards sit in the middle of the market: budget (up to $50 raw) 62, mid ($50 to $150) 218, high ($150 to $500) 152, chase (above $500) 76
+
+<img width="977" height="598" alt="image" src="https://github.com/user-attachments/assets/b8495b02-668c-4ff6-93de-569e6cc50a59" />
+Figure 4. 279 of 508 cards (55%) have low raw confidence and only 17 have high confidence, so many raw prices rest on few sales and should be read with caution.
+
+<img width="983" height="605" alt="image" src="https://github.com/user-attachments/assets/4e5eaa9b-994a-4240-ab41-4b200806c353" />
+Figure 5. The median PSA 10 price rises with the raw tier: $555 (budget), $663 (mid), $1,812 (high), $8,602 (chase). Budget and mid overlap heavily, so raw price separates the upper tiers better than the lower ones.
+
+<img width="980" height="608" alt="image" src="https://github.com/user-attachments/assets/1124a690-a405-440d-959c-7fc7d56e18fb" />
+Figure 6. Cards with low PSA 10 confidence have the highest median price ($3,167) but the fewest sales (median 11), compared with $688 and 271.5 sales for high confidence. Expensive cards trade rarely, so their prices are less certain.
+
+<img width="981" height="600" alt="image" src="https://github.com/user-attachments/assets/2940f08a-6bfc-4f6b-a5e2-08016bf78993" />
+Figure 7. Raw and PSA 10 log prices are positively related (r = 0.55) but the scatter is wide, so raw price alone predicts the PSA 10 price only roughly. The median PSA 10 / raw multiple is 15.8x for budget cards versus 7.3x, 6.5x and 7.9x for mid, high and chase.
+
+<img width="976" height="601" alt="image" src="https://github.com/user-attachments/assets/3241aa7c-e4cf-4fb0-8815-0aefbfd96eab" />
+Figure 8. A PSA 10 sells for a median of 4.9x the PSA 9 price (middle half: 3.3x to 7.3x). 7 cards fall below 1x, meaning a PSA 10 priced under a PSA 9, which is a data-quality warning.
+
+<img width="992" height="601" alt="image" src="https://github.com/user-attachments/assets/bf4b572b-b311-423f-9765-c2fac9e782a0" />
+Figure 9. The priciest PSA 10 is Lugia ex at $125,100, based on only 5 sales. 6 of these 10 cards have fewer than 10 PSA 10 sales, and 5 are 'ex' cards.
+
+<img width="1077" height="672" alt="image" src="https://github.com/user-attachments/assets/46e272fc-ac63-469e-83ee-65db64885f50" />
+Figure 10. The price columns move together (log_psa9 vs log_psa10, r = 0.90). PSA 10 sample count is negatively related to PSA 10 price (r = -0.39), and psa9_sample_count and graded_sales_total carry almost the same signal (r = 0.95), so one of them is redundant for modelling.
+
+
 | # | Plot | Insight |
 | :--- | :--- | :--- |
 | 1 | Histogram of PSA 10 price (USD), with the median marked | The median PSA 10 price is $1,150 but the mean is $4,493 (skew 6.41). The 10 most expensive cards make up 25% of all PSA 10 value. |
