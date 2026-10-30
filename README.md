@@ -33,7 +33,7 @@
 | :--- | :--- |
 | 🗂️ **Dataset Title** | Pokémon Card Sold-Price Reference by Grade (2026) |
 | 🔗 **Source** | Kaggle, file `gemsnipe-card-sold-price-reference.csv` · [Dataset page](https://www.kaggle.com/datasets/ryanheger/pokemon-card-sold-price-reference) |
-| 📜 **License / Attribution** | `[TODO: copy the license shown on the Kaggle dataset page]` · Dataset uploaded to Kaggle by `ryanheger` |
+| 📜 **License / Attribution** | `Attribution 4.0 International (CC BY 4.0)` · Dataset uploaded to Kaggle by `ryanheger` |
 | 📏 **Dataset size** | 508 rows × 14 columns (one row per card) |
 | 🎯 **Objective** | Find out how the sold price of a Pokémon card changes with its grade (raw, PSA 9, PSA 10) and how reliable those prices are. The data is cleaned and prepared (missing values, duplicates, data types, outliers, encoding, scaling), then 10 visualizations show how raw price, graded price, number of sales and confidence relate to each other. |
 
