@@ -25,7 +25,7 @@
 | 🏷️ **Group Name** | Beans & Sulit |
 | 🙋 **Members** | Beans, Zachary U. · Sulit, Gian Karl M. |
 | 🎯 **Assigned Theme** | Entertainment |
-| 📌 **Topic** | Pokémon card sold prices: raw vs PSA 9 vs PSA 10 copies |
+| 📌 **Topic** | Pokémon Card Sold-Price Reference by Grade (2026) |
 
 ## 2. 📦 Project Overview
 
